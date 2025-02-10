@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="gradient-sphere"></div>
+        <div class="gradient-sphere sphere-2"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">NJ</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#workflow">Workflow</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content animate-fade-in">
+                <h1 class="typewriter" >Naman Jain</h1>
+                <h1 class="typewriter" style="padding-top: -60px;margin-top:-20px;">Frontend Developer</h1>
+                <div class="tech-stack animate-slide-up">
+                    <i class="fab fa-react" title="React"></i>
+                    <i class="fab fa-js" title="JavaScript"></i>
+                    <i class="fab fa-html5" title="HTML5"></i>
+                    <i class="fab fa-css3-alt" title="CSS3"></i>
+                    <i class="fab fa-vuejs" title="Vue.js"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow" class="workflow-section glass-card">
+            <h2>Development Workflow</h2>
+            <div class="workflow-chart">
+                <div class="workflow-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Planning</span>
+                </div>
+                <i class="fas fa-arrow-right workflow-arrow"></i>
+                <div class="workflow-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>Design</span>
+                </div>
+                <i class="fas fa-arrow-right workflow-arrow"></i>
+                <div class="workflow-item">
+                    <i class="fas fa-code"></i>
+                    <span>Development</span>
+                </div>
+                <i class="fas fa-arrow-right workflow-arrow"></i>
+                <div class="workflow-item">
+                    <i class="fas fa-vial"></i>
+                    <span>Testing</span>
+                </div>
+                <i class="fas fa-arrow-right workflow-arrow"></i>
+                <div class="workflow-item">
+                    <i class="fas fa-rocket"></i>
+                    <span>Deployment</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section glass-card">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <span class="skill-name">HTML5/CSS3</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">React</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card glass-card">
+                    <i class="project-icon fab fa-youtube"></i>
+                    <h3>YouTube Clone</h3>
+                    <p>A modern YouTube clone with video streaming capabilities</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <i class="project-icon fab fa-amazon"></i>
+                    <h3>Amazon Prime Clone</h3>
+                    <p>Streaming platform with Prime Video features</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">css</span>
+                    </div>
+                    <div class="project-links" style="text-decoration: none;">
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <i class="project-icon fas fa-car"></i>
+                    <h3>Porsche Taycan Experience</h3>
+                    <p>Interactive 3D showcase of the Porsche Taycan</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fas fa-globe"></i> Live Demo</a>
+                        <a href="#" class="neon-link" style="text-decoration: none;color: aqua;"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section glass-card">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-message"></i>
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Frontend Developer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
