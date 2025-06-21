@@ -47,7 +47,7 @@ const Hero = () => {
 
           </h1>
 
-          <p className="hero_tag text-gray_gradient text-xl sm:text-4xl font-medium">Building Products & Brands</p>
+          <p className="hero_tag text-gray_gradient text-xl sm:text-4xl font-medium">Building Websites & solution</p>
 
          
         </div>
