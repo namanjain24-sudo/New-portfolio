@@ -16,53 +16,38 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    setLoading(true);
+    try{
+      await emailjs.send(
+        'service_krgjvwq',
+        'template_hxy55uj',
         {
           from_name: form.name,
-          to_name: 'JavaScript Mastery',
+          to_name: 'Naman Jain',
           from_email: form.email,
-          to_email: 'sujata@jsmastery.pro',
+          to_email: 'namanjainpy@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: 'Thank you for your message 😃',
-            type: 'success',
-          });
-
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: 'danger',
-          });
-        },
+        {
+          publicKey: 'F32D2u4S1NjexRD8W',
+        }
       );
-  };
+      setLoading(false);
+      showAlert({ show: true, text: 'Message sent successfully!', type: 'success' });
+
+      setTimeout(() => {
+        hideAlert();
+        setForm({ name: '', email: '', message: '' });
+      }, 3000);
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      showAlert({ show: true, text: 'Something went wrong', type: 'danger' });
+    }
+  }
 
   return (
     <section className="c-space my-20" id="contact">
@@ -72,10 +57,10 @@ const Contact = () => {
         <img src="/assets/terminal.png" alt="terminal-bg" className="absolute inset-0 min-h-screen" />
 
         <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
+          <h3 className="head-text mt-10">Let&apos;s talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
-            life, I’m here to help.
+            Whether you&apos;re looking to build a new website, improve your existing platform, or bring a unique project to
+            life, I&apos;m here to help.
           </p>
 
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
